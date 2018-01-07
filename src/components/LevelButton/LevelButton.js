@@ -22,8 +22,8 @@ class LevelButton extends Component {
 
   renderButton(value) {
     const {current} = this.state;
-    const className = classNames('level-btn__item', {
-      'btn-active': current === value
+    const className = classNames('level-button', {
+      'level-button_active': current === value
     });
 
     return (
@@ -35,7 +35,7 @@ class LevelButton extends Component {
     const listButton = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
     return (
-      <div className="level-btn">
+      <div className="level-buttons">
         {listButton.map(item => this.renderButton(item))}
       </div>
     );

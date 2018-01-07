@@ -392,44 +392,71 @@ template {
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  color: #2e3138; }
+  color: #2e3138;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .app {
   padding: 30px; }
 
 .header__title {
-  margin-top: 0; }
+  font-size: 38px;
+  margin: 0 0 30px; }
 
-.btn-active {
-  background-color: rgba(255, 230, 0, 0.842); }
+.level-buttons {
+  margin-bottom: -2px; }
+
+.level-button {
+  background: none;
+  border: none;
+  color: #2e3138;
+  font-family: inherit;
+  outline: none;
+  font-size: 18px;
+  padding: 0;
+  width: 60px;
+  height: 40px;
+  line-height: 1;
+  text-align: center;
+  user-select: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  cursor: pointer; }
+  .level-button_active {
+    border: 1px solid #e0decc;
+    border-bottom: none;
+    background-color: #f5f5e9; }
 
 .table {
   width: 100%;
-  max-width: 850px;
-  margin-top: 50px;
-  padding: 5px 25px;
-  background-color: #f5f5e9; }
-  .table__head {
-    font-size: 14px;
-    font-weight: 600; }
-    .table__head .table__cell {
-      padding: 25px 0; }
+  max-width: 800px;
+  padding: 15px 35px 20px;
+  background-color: #f5f5e9;
+  border: 1px solid #e0decc; }
   .table__row {
     display: flex;
-    border-bottom: 1px solid #d8d5c2; }
-    .table__row:last-child {
+    border-bottom: 1px solid #e0decc; }
+    .table__row:first-child, .table__row:last-child {
       border: none; }
   .table__cell {
     width: 25%;
     padding: 25px 0; }
     .table__cell_exercise {
       font-weight: 600;
-      font-size: 14px; }
-    .table__cell_low {
-      color: #54cd9a; }
-    .table__cell_medium {
-      color: #fc9a14; }
-    .table__cell_high {
-      color: #ec2f2a; }
+      margin-right: 50px; }
+    .table__cell_sublevels {
+      font-weight: 600;
+      padding: 25px 0 10px; }
+      .table__cell_sublevels_low span {
+        padding-bottom: 8px;
+        border-bottom: 2px solid #54cd9a; }
+      .table__cell_sublevels_medium span {
+        padding-bottom: 8px;
+        border-bottom: 2px solid #fc9a14; }
+      .table__cell_sublevels_high span {
+        padding-bottom: 8px;
+        border-bottom: 2px solid #ec2f2a; }

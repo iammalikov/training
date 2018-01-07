@@ -28,10 +28,12 @@ class App extends Component {
     const { level } = this.state;
 
     return (
-      <div className="app">
+      <div className='app'>
         <Header />
-        {/* <LevelButton current={level} onChangeLevel={this.handleChangeLevel} /> */}
-        <Table level={level} />
+        <section className='main'>
+          <LevelButton current={level} onChangeLevel={this.handleChangeLevel} />
+          <Table level={level} />
+        </section>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import data from '../../assets/data/data';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 
 class Table extends Component {
   // sublevelsClassName(index) {
@@ -45,17 +45,13 @@ class Table extends Component {
 
     return (
       <div className='table'>
-        <div className='table__head'>
-          <div className='table__row'>
-            <div className='table__cell'></div>
-            <div className='table__cell'>Начальный</div>
-            <div className='table__cell'>Продвинутый</div>
-            <div className='table__cell'>Условие перехода</div>
-          </div>
+        <div className='table__row'>
+          <div className='table__cell table__cell_exercise'></div>
+          <div className='table__cell table__cell_sublevels table__cell_sublevels_low'><span>Начальный</span></div>
+          <div className='table__cell table__cell_sublevels table__cell_sublevels_medium'><span>Продвинутый</span></div>
+          <div className='table__cell table__cell_sublevels table__cell_sublevels_high'><span>Условие перехода</span></div>
         </div>
-        <div className='table__body'>
-          {rows}
-        </div>
+        {rows}
       </div>
     );
   }
