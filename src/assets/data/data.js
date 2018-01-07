@@ -17,7 +17,7 @@ export default [
       name: 'вертикальное подтягивание'
     },
     legLifts: {
-      title: 'Пресс / подъем ног',
+      title: 'Подъем ног',
       sublevels: ['1x10', '2x25', '3x40'],
       name: 'подтягивание колен к животу'
     },
@@ -27,8 +27,8 @@ export default [
       name: 'короткие мосты'
     },
     pushupsHandstand: {
-      title: 'Отжимания в стойке на&nbsp;руках',
-      sublevels: ['30 сек', '1 мин.', '2 мин.'],
+      title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
+      sublevels: ['30 сек.', '1 мин.', '2 мин.'],
       name: 'стойка на голове у стены'
     }
   },
@@ -50,7 +50,7 @@ export default [
       name: 'горизонтальное подтягивание'
     },
     legLifts: {
-      title: 'Пресс / подъем ног',
+      title: 'Подъем ног',
       sublevels: ['1x10', '2x20', '3x35'],
       name: 'подъёмы коленей лёжа'
     },
@@ -60,7 +60,7 @@ export default [
       name: 'ровные мосты'
     },
     pushupsHandstand: {
-      title: 'Отжимания в стойке на&nbsp;руках',
+      title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
       sublevels: ['10 сек.', '30 сек.', '1 мин.'],
       name: 'поза ворона'
     }
@@ -83,7 +83,7 @@ export default [
       name: 'подтягивание «перочиный нож»'
     },
     legLifts: {
-      title: 'Пресс / подъем ног',
+      title: 'Подъем ног',
       sublevels: ['1x10', '2x15', '3x30'],
       name: 'подъёмы коленей лёжа'
     },
@@ -93,7 +93,7 @@ export default [
       name: 'мосты под углом'
     },
     pushupsHandstand: {
-      title: 'Отжимания в стойке на&nbsp;руках',
+      title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
       sublevels: ['30 сек.', '1 мин.', '2 мин.'],
       name: 'стойка на руках у стены'
     }
@@ -116,7 +116,7 @@ export default [
       name: 'полуподтягивания'
     },
     legLifts: {
-      title: 'Пресс / подъем ног',
+      title: 'Подъем ног',
       sublevels: ['1x8', '2x15', '3x25'],
       name: 'лягушачьи подъёмы лёжа'
     },
@@ -126,9 +126,9 @@ export default [
       name: 'мосты на голове'
     },
     pushupsHandstand: {
-      title: 'Отжимания в стойке на&nbsp;руках',
+      title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
       sublevels: ['1x5', '2x10', '2x20'],
-      name: 'частичные отжимания в стойке н&nbsp; руках'
+      name: 'частичные отжимания вnbsp; стойке н&nbsp; руках'
     }
   },
   {
@@ -149,7 +149,7 @@ export default [
       name: 'полное подтягивание'
     },
     legLifts: {
-      title: 'Пресс / подъем ног',
+      title: 'Подъем ног',
       sublevels: ['1x5', '2x10', '2x20'],
       name: 'ровные прямые подъемы ног'
     },
@@ -159,9 +159,9 @@ export default [
       name: 'половинные мосты'
     },
     pushupsHandstand: {
-      title: 'Отжимания в стойке на&nbsp;руках',
+      title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
       sublevels: ['1x5', '2x10', '2x15'],
-      name: 'отжимания в стойке н&nbsp; руках'
+      name: 'отжимания вnbsp; стойке н&nbsp; руках'
     }
   },
   {
@@ -182,7 +182,7 @@ export default [
       name: 'подтягивания узким хватом'
     },
     legLifts: {
-      title: 'Пресс / подъем ног',
+      title: 'Подъем ног',
       sublevels: ['1x5', '2x10', '2x15'],
       name: 'подъем коленей из виса на перекладине'
     },
@@ -192,9 +192,9 @@ export default [
       name: 'полные мосты'
     },
     pushupsHandstand: {
-      title: 'Отжимания в стойке на&nbsp;руках',
+      title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
       sublevels: ['1x5', '2x9', '2x12'],
-      name: 'закрытые отжимания в стойке н&nbsp; руках'
+      name: 'закрытые отжимания вnbsp; стойке н&nbsp; руках'
     }
   },
   {
@@ -218,7 +218,7 @@ export default [
       isBothSides: true
     },
     legLifts: {
-      title: 'Пресс / подъем ног',
+      title: 'Подъем ног',
       sublevels: ['1x5', '2x10', '2x15'],
       name: 'подъем согнутой ноги'
     },
@@ -228,9 +228,9 @@ export default [
       name: 'шагающие по стене мосты (вниз)'
     },
     pushupsHandstand: {
-      title: 'Отжимания в стойке на&nbsp;руках',
+      title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
       sublevels: ['1x5', '2x8', '2x10'],
-      name: 'неравномерные отжимания в стойке на&nbsp;руках',
+      name: 'неравномерные отжимания в&nbsp;стойке на&nbsp;руках',
       isBothSides: true
     }
   },
@@ -255,7 +255,7 @@ export default [
       isBothSides: true
     },
     legLifts: {
-      title: 'Пресс / подъем ног',
+      title: 'Подъем ног',
       sublevels: ['1x5', '2x10', '2x15'],
       name: 'висячие подъемы лягушкой'
     },
@@ -265,9 +265,9 @@ export default [
       name: 'шагающие по стене мосты (вверх)'
     },
     pushupsHandstand: {
-      title: 'Отжимания в стойке на&nbsp;руках',
+      title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
       sublevels: ['1x4', '2x6', '2x8'],
-      name: '1/2 отжимания в стойке на одной руке',
+      name: '1/2 отжимания в одноистойке на одной руке',
       isBothSides: true
     }
   },
@@ -292,7 +292,7 @@ export default [
       isBothSides: true
     },
     legLifts: {
-      title: 'Пресс / подъем ног',
+      title: 'Подъем ног',
       sublevels: ['1x5', '2x10', '2x15'],
       name: 'подъемы частично прямой ноги'
     },
@@ -302,9 +302,9 @@ export default [
       name: 'закрытые мосты'
     },
     pushupsHandstand: {
-      title: 'Отжимания в стойке на&nbsp;руках',
+      title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
       sublevels: ['1x3', '2x4', '2x6'],
-      name: 'рычажные отжимания в стойке на&nbsp;руках',
+      name: 'рычажные отжимания в&nbsp;стойке на&nbsp;руках',
       isBothSides: true
     }
   },
@@ -329,7 +329,7 @@ export default [
       isBothSides: true
     },
     legLifts: {
-      title: 'Пресс / подъем ног',
+      title: 'Подъем ног',
       sublevels: ['1x5', '2x10', '2x30'],
       name: 'подъем прямых ног в висе'
     },
@@ -339,7 +339,7 @@ export default [
       name: 'двухопорные мосты'
     },
     pushupsHandstand: {
-      title: 'Отжимания в стойке на&nbsp;руках',
+      title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
       sublevels: ['1x1', '2x2', '2x5'],
       name: 'отжимание в стойке на одной руке',
       isBothSides: true

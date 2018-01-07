@@ -1,18 +1,39 @@
 @import './core/_core';
 
-.app {
-  padding: 30px;
+.header {
+  padding: 15px 15px 20px;
+
+  @include mq(600px) {
+    padding: 25px 25px 30px;
+  }
+
+  @include mq(900px) {
+    padding: 30px 30px 35px;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin: 0;
+
+    @include mq(600px) {
+      font-size: 38px;
+    }
+  }
 }
 
-.header {
-  &__title {
-    font-size: 38px;
-    margin: 0 0 30px;
+.main {
+  @include mq(800px) {
+    padding: 0 25px 35px;
+  }
+
+  @include mq(900px) {
+    padding: 0 30px 35px;
   }
 }
 
 .level-buttons {
-  margin-bottom: -2px;
+  display: flex;
+  margin-bottom: -1px;
 }
 
 .level-button {
@@ -21,10 +42,10 @@
   color: #2e3138;
   font-family: inherit;
   outline: none;
-  font-size: 18px;
+  font-size: 15px;
   padding: 0;
   width: 60px;
-  height: 40px;
+  height: 35px;
   line-height: 1;
   text-align: center;
   user-select: none;
@@ -33,37 +54,117 @@
   overflow: hidden;
   cursor: pointer;
 
+  &:first-child {
+    border-left-width: 0;
+  }
+
+  &:last-child {
+    border-right-width: 0;
+  }
+
   &_active {
     border: 1px solid $border;
-    border-bottom: none;
+    border-bottom: 1px solid $table-bg;
     background-color: $table-bg;
+  }
+
+  @include mq(600px) {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  @include mq(601px) {
+    &:last-child {
+      border-right-width: 1px;
+    }
+  }
+
+  @include mq(800px) {
+    height: 45px;
+    font-size: 18px;
+
+    &:first-child {
+      border-left-width: 1px;
+    }
   }
 }
 
 .table {
-  width: 100%;
   max-width: 800px;
-  padding: 15px 35px 20px;
+  padding: 15px 0 10px;
   background-color: $table-bg;
-  border: 1px solid $border;
+  border-top: 1px solid $border;
+
+  @include mq(600px) {
+    padding: 15px 25px 20px;
+  }
+
+  @include mq(800px) {
+    padding: 15px 35px 20px;
+    border: 1px solid $border;
+  }
+
+  &__head {
+    display: none;
+
+    @include mq(600px) {
+      display: block;
+    }
+  }
 
   &__row {
-    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid $border;
+
+    @include mq(600px) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
 
     &:first-child,
     &:last-child {
       border: none;
+      margin-bottom: 0;
+    }
+
+    @include mq(600px) {
+      display: flex;
     }
   }
 
   &__cell {
-    width: 25%;
-    padding: 25px 0;
+    padding: 5px 15px;
+    font-size: 15px;
+
+    @include mq(600px) {
+      width: 25%;
+      padding: 25px 0;
+      font-size: 14px;
+    }
+
+    &_hide {
+      display: none;
+
+      @include mq(600px) {
+        display: block;
+      }
+    }
 
     &_exercise {
+      font-size: 18px;
       font-weight: 600;
-      margin-right: 50px;
+      margin-bottom: 5px;
+
+      @include mq(600px) {
+        font-size: 14px;
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
+
+      @include mq(800px) {
+        margin-right: 50px;
+      }
     }
 
     &_sublevels {
@@ -73,27 +174,82 @@
       &_low {
         span {
           padding-bottom: 8px;
-          border-bottom: 2px solid #54cd9a;
+          border-bottom: 2px solid $low;
         }
       }
 
       &_medium {
         span {
           padding-bottom: 8px;
-          border-bottom: 2px solid #fc9a14;
+          border-bottom: 2px solid $medium;
         }
       }
 
       &_high {
         span {
           padding-bottom: 8px;
-          border-bottom: 2px solid #ec2f2a;
+          border-bottom: 2px solid $high;
         }
       }
     }
 
     &_approach {
-      // margin-left: 10px;
+
+      span {
+        vertical-align: middle;
+      }
+
+      &_low,
+      &_medium,
+      &_high {
+        &::before,
+        &::after {
+          vertical-align: middle;
+
+          @include mq(600px) {
+            display: none;
+          }
+        }
+      }
+
+      &_low {
+        &::before {
+          content: '• ';
+          font-size: 16px;
+          font-weight: 600;
+          color: $low;
+        }
+
+        &::after {
+          content: ' — Начальный';
+        }
+      }
+
+      &_medium {
+        &::before {
+          content: '• ';
+          font-size: 16px;
+          font-weight: 600;
+          color: $medium;
+        }
+
+        &::after {
+          content: ' — Продвинутый';
+        }
+      }
+
+      &_high {
+        &::before {
+          content: '• ';
+          font-size: 16px;
+          font-weight: 600;
+          color: $high;
+        }
+
+        &::after {
+          content: ' — Условие перехода';
+        }
+      }
     }
   }
 }

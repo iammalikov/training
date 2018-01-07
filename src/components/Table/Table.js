@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import data from '../../assets/data/data';
-// import classNames from 'classnames';
+import classNames from 'classnames';
 
 class Table extends Component {
-  // sublevelsClassName(index) {
-  //   return classNames('table__cell', {
-  //     'table__cell_low': index === 0,
-  //     'table__cell_medium': index === 1,
-  //     'table__cell_high': index === 2,
-  //   });
-  // }
+  sublevelsClassName(index) {
+    return classNames('table__cell table__cell_approach', {
+      'table__cell_approach_low': index === 0,
+      'table__cell_approach_medium': index === 1,
+      'table__cell_approach_high': index === 2,
+    });
+  }
 
   renderSublevels(dataSublevels) {
     return (
       dataSublevels.map((value, index) =>
-        <div className='table__cell table__cell_approach' key={index}>
-          {value}
+        <div className={this.sublevelsClassName(index)} key={index}>
+          <span>{value}</span>
         </div>
       )
     );
@@ -45,11 +45,13 @@ class Table extends Component {
 
     return (
       <div className='table'>
-        <div className='table__row'>
-          <div className='table__cell table__cell_exercise'></div>
-          <div className='table__cell table__cell_sublevels table__cell_sublevels_low'><span>Начальный</span></div>
-          <div className='table__cell table__cell_sublevels table__cell_sublevels_medium'><span>Продвинутый</span></div>
-          <div className='table__cell table__cell_sublevels table__cell_sublevels_high'><span>Условие перехода</span></div>
+        <div className="table__head">
+          <div className='table__row'>
+            <div className='table__cell table__cell_hide table__cell_exercise'></div>
+            <div className='table__cell table__cell_sublevels table__cell_sublevels_low'><span>Начальный</span></div>
+            <div className='table__cell table__cell_sublevels table__cell_sublevels_medium'><span>Продвинутый</span></div>
+            <div className='table__cell table__cell_sublevels table__cell_sublevels_high'><span>Переход</span></div>
+          </div>
         </div>
         {rows}
       </div>
