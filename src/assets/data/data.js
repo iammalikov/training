@@ -335,7 +335,7 @@ export default [
     },
     bridges: {
       title: 'Мосты',
-      sublevels: ['1x1', '2x3', '2x10(30)'],
+      sublevels: ['1x1', '2x3', '2x10–30'],
       name: 'двухопорные мосты'
     },
     pushupsHandstand: {

@@ -253,3 +253,39 @@
     }
   }
 }
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 90%;
+  max-width: 600px;
+  top: 0;
+  left: 0;
+  overflow-x: scroll;
+  background-color: #fff;
+  transform: translateX(-100%);
+  transition: .3s ease;
+
+  &_show {
+    transform: translateX(0);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  &__inner {
+    padding: 15px;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  &__img {
+    margin: 20px -3px 0;
+    padding: 0 3px;
+  }
+}

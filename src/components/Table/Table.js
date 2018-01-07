@@ -24,7 +24,7 @@ class Table extends Component {
   renderCells(dataCell) {
     return (
       <React.Fragment>
-        <div className='table__cell table__cell_exercise' dangerouslySetInnerHTML={{__html: dataCell.title}} />
+        <div className='table__cell table__cell_exercise' onClick={this.props.onChangeShowSidebar} dangerouslySetInnerHTML={{__html: dataCell.title}} />
         {this.renderSublevels(dataCell.sublevels)}
       </React.Fragment>
     );
