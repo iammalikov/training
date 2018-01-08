@@ -155,6 +155,12 @@
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 5px;
+      transition: .3s ease;
+      cursor: pointer;
+
+      &:hover {
+        color: rgba($text-color, 0.5);
+      }
 
       @include mq(600px) {
         font-size: 14px;
@@ -257,7 +263,7 @@
 .sidebar {
   position: fixed;
   height: 100%;
-  width: 90%;
+  width: 95%;
   max-width: 600px;
   top: 0;
   left: 0;

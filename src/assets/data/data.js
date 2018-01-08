@@ -29,7 +29,7 @@ export default [
     pushupsHandstand: {
       title: 'Отжимания в&nbsp;стойке на&nbsp;руках',
       sublevels: ['30 сек.', '1 мин.', '2 мин.'],
-      name: 'стойка на голове у стены'
+      name: 'стойка на голове у&nbsp;стены'
     }
   },
   {

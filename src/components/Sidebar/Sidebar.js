@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import data from '../../assets/data/data';
 
 class Sidebar extends Component {
-  static defaultProps = {
-    show: false
-  }
-
   constructor(props) {
     super(props);
-
-    this.state = {
-      show: this.props.show
-    };
 
     this.handleShowChanges = this.handleShowChanges.bind(this);
   }
@@ -25,9 +18,11 @@ class Sidebar extends Component {
   }
 
   render() {
-    console.log('render Sidebar = ' + this.state.show);
+    const { show, level, exercise } = this.props;
+    console.log(level, exercise);
 
-    const {show} = this.state;
+    const title = data[level][exercise].title;
+    const subtitle = data[level][exercise].name;
     const className = classNames('sidebar', {
       'sidebar_show': show
     });
@@ -35,10 +30,10 @@ class Sidebar extends Component {
     return (
       <aside className={className}>
         <div className="sidebar__inner">
-          <button onClick={this.handleShowChanges}>close</button>
-          <h2 className="sidebar__title">Отжимания в&nbsp;стойке на&nbsp;руках</h2>
-          <h3 className="sidebar__subtitle">стойка на голове у стены</h3>
-          <img className="sidebar__img" src={process.env.PUBLIC_URL + '/assets/photo/pushups/1.jpg'} alt='стойка на голове у стены' />
+          <button onClick={this.props.onChangeShowSidebar}>close</button>
+          <h2 className="sidebar__title" dangerouslySetInnerHTML={{__html: title}} />
+          <h3 className="sidebar__subtitle" dangerouslySetInnerHTML={{__html: subtitle}} />
+          <img className="sidebar__img" src={process.env.PUBLIC_URL + `/assets/photo/${exercise}/${level + 1}.jpg`} alt={subtitle} />
         </div>
       </aside>
     );

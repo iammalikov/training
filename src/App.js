@@ -7,7 +7,8 @@ import Sidebar from './components/Sidebar/Sidebar';
 class App extends Component {
   static defaultProps = {
     level: 0,
-    showSidebar: false
+    showSidebar: false,
+    exercise: 'pushups'
   }
 
   constructor(props) {
@@ -15,7 +16,8 @@ class App extends Component {
 
     this.state = {
       level: this.props.level,
-      showSidebar: this.props.showSidebar
+      showSidebar: this.props.showSidebar,
+      exercise: this.props.exercise
     }
 
     this.handleChangeLevel = this.handleChangeLevel.bind(this);
@@ -28,9 +30,15 @@ class App extends Component {
     });
   }
 
-  handleChangeShowSidebar() {
+  handleChangeShowSidebar(e) {
     const showStatus = this.state.showSidebar;
-    console.log(showStatus);
+
+    if (e.target.classList.contains('table__cell_exercise')) {
+      return this.setState({
+        showSidebar: !showStatus,
+        exercise: e.target.id
+      });
+    }
 
     this.setState({
       showSidebar: !showStatus
@@ -38,9 +46,7 @@ class App extends Component {
   }
 
   render() {
-    const { level, showSidebar } = this.state;
-
-    console.log('render App');
+    const { level, showSidebar, exercise } = this.state;
 
     return (
       <div className='app'>
@@ -49,7 +55,7 @@ class App extends Component {
           <LevelButton current={level} onChangeLevel={this.handleChangeLevel} />
           <Table level={level} onChangeShowSidebar={this.handleChangeShowSidebar} />
         </section>
-        <Sidebar show={showSidebar} />
+        <Sidebar show={showSidebar} level={level} exercise={exercise} onChangeShowSidebar={this.handleChangeShowSidebar} />
       </div>
     );
   }

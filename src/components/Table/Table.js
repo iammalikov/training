@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import data from '../../assets/data/data';
 import classNames from 'classnames';
+import data from '../../assets/data/data';
 
 class Table extends Component {
   sublevelsClassName(index) {
     return classNames('table__cell table__cell_approach', {
       'table__cell_approach_low': index === 0,
       'table__cell_approach_medium': index === 1,
-      'table__cell_approach_high': index === 2,
+      'table__cell_approach_high': index === 2
     });
   }
 
@@ -21,10 +21,14 @@ class Table extends Component {
     );
   }
 
-  renderCells(dataCell) {
+  renderCells(dataCell, nameExercise) {
     return (
       <React.Fragment>
-        <div className='table__cell table__cell_exercise' onClick={this.props.onChangeShowSidebar} dangerouslySetInnerHTML={{__html: dataCell.title}} />
+        <div className='table__cell table__cell_exercise'
+          id={nameExercise}
+          onClick={(e) => this.props.onChangeShowSidebar(e)}
+          dangerouslySetInnerHTML={{__html: dataCell.title}}
+        />
         {this.renderSublevels(dataCell.sublevels)}
       </React.Fragment>
     );
@@ -33,7 +37,7 @@ class Table extends Component {
   renderRows(dataRows) {
     return Object.keys(dataRows).map(row =>
       <div className='table__row' key={row}>
-        {this.renderCells(dataRows[row])}
+        {this.renderCells(dataRows[row], row)}
       </div>
     );
   }
