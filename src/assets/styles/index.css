@@ -598,11 +598,44 @@ img {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
   .sidebar__inner {
     padding: 15px; }
+  .sidebar__close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px; }
   .sidebar__title {
-    margin: 0 0 10px; }
+    margin: 0 0 5px;
+    font-size: 28px;
+    line-height: 1; }
+    @media (min-width: 768px) {
+      .sidebar__title {
+        font-size: 32px; } }
   .sidebar__subtitle {
-    margin: 0;
+    margin: 0 0 20px;
+    font-size: 18px;
     font-weight: 400; }
-  .sidebar__img {
-    margin: 20px -3px 0;
-    padding: 0 3px; }
+    @media (min-width: 768px) {
+      .sidebar__subtitle {
+        font-size: 22px; } }
+
+.close-button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: #fff;
+  outline: none;
+  user-select: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  cursor: pointer; }
+  .close-button > svg {
+    fill: #2e3138;
+    transition: .3s ease; }
+  .close-button:hover > svg {
+    fill: rgba(46, 49, 56, 0.5); }
+  @media (min-width: 768px) {
+    .close-button {
+      width: 28px;
+      height: 28px; } }
