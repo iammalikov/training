@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from './components/Header/Header';
-import LevelButton from './components/LevelButton/LevelButton';
-import Table from './components/Table/Table';
-import Sidebar from './components/Sidebar/Sidebar';
+import Header from '../Header/Header';
+import LevelButton from '../LevelButton/LevelButton';
+import Table from '../Table/Table';
+import Sidebar from '../Sidebar/Sidebar';
 
 class App extends Component {
   static defaultProps = {
@@ -49,14 +49,17 @@ class App extends Component {
     const { level, showSidebar, exercise } = this.state;
 
     return (
-      <div className='app'>
+      <React.Fragment>
         <Header />
         <section className='main'>
           <LevelButton current={level} onChangeLevel={this.handleChangeLevel} />
           <Table level={level} onChangeShowSidebar={this.handleChangeShowSidebar} />
+          <div className="about">
+            <p className="about__item">Сводная таблица упражнений из&nbsp;книги Пола Уэйда&nbsp;&mdash; <a className="link" href="https://www.ozon.ru/context/detail/id/142431436/">&laquo;Convict Conditioning&raquo;</a>.</p>
+          </div>
         </section>
         <Sidebar show={showSidebar} level={level} exercise={exercise} onChangeShowSidebar={this.handleChangeShowSidebar} />
-      </div>
+      </React.Fragment>
     );
   }
 }

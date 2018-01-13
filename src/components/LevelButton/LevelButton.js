@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import classNames from 'classnames';
+import React, { Component } from "react";
+import classNames from "classnames";
 
 class LevelButton extends Component {
   constructor(props) {
@@ -22,8 +22,8 @@ class LevelButton extends Component {
 
   renderButton(value) {
     const {current} = this.state;
-    const className = classNames('level-button', {
-      'level-button_active': current === value
+    const className = classNames("level-button", {
+      "level-button_active": current === value
     });
 
     return (

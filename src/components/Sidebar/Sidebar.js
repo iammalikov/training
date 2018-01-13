@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import classNames from 'classnames';
-import data from '../../assets/data/data';
+import React, { Component } from "react";
+import classNames from "classnames";
+import data from "../../assets/data/data";
 
 class Sidebar extends Component {
   constructor(props) {
@@ -21,8 +21,8 @@ class Sidebar extends Component {
     const { show, level, exercise } = this.props;
     const title = data[level][exercise].title;
     const subtitle = data[level][exercise].name;
-    const className = classNames('sidebar', {
-      'sidebar_show': show
+    const className = classNames("sidebar", {
+      "sidebar_show": show
     });
 
     return (

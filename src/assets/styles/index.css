@@ -396,21 +396,24 @@ template {
 /**
 * Colors
 */
-html,
-body,
-#root,
-.app {
-  height: 100%; }
-
 body {
   margin: 0;
   padding: 0;
   color: #2e3138;
   font-size: 14px;
   line-height: 1.2;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.link {
+  color: #00aaff;
+  border-bottom: 1px solid rgba(0, 170, 255, 0.3);
+  text-decoration: none;
+  transition: .3s; }
+  .link:hover, .link:focus {
+    color: #fc9a14;
+    border-bottom: 1px solid rgba(252, 154, 20, 0.3); }
 
 img {
   max-width: 100%; }
@@ -514,7 +517,8 @@ img {
         display: flex; } }
   .table__cell {
     padding: 5px 15px;
-    font-size: 15px; }
+    font-size: 15px;
+    line-height: 1.5; }
     @media (min-width: 600px) {
       .table__cell {
         width: 25%;
@@ -541,6 +545,10 @@ img {
       @media (min-width: 800px) {
         .table__cell_exercise {
           margin-right: 50px; } }
+      .table__cell_exercise span {
+        padding-bottom: 2px;
+        border-bottom: 1px dashed rgba(46, 49, 56, 0.5);
+        pointer-events: none; }
     .table__cell_sublevels {
       font-weight: 600;
       padding: 25px 0 10px; }
@@ -553,34 +561,32 @@ img {
       .table__cell_sublevels_high span {
         padding-bottom: 8px;
         border-bottom: 2px solid #ec2f2a; }
-    .table__cell_approach span {
-      vertical-align: middle; }
     .table__cell_approach_low::before, .table__cell_approach_low::after, .table__cell_approach_medium::before, .table__cell_approach_medium::after, .table__cell_approach_high::before, .table__cell_approach_high::after {
       vertical-align: middle; }
       @media (min-width: 600px) {
         .table__cell_approach_low::before, .table__cell_approach_low::after, .table__cell_approach_medium::before, .table__cell_approach_medium::after, .table__cell_approach_high::before, .table__cell_approach_high::after {
           display: none; } }
     .table__cell_approach_low::before {
-      content: '• ';
+      content: "• ";
       font-size: 16px;
       font-weight: 600;
       color: #54cd9a; }
     .table__cell_approach_low::after {
-      content: ' — Начальный'; }
+      content: " — Начальный"; }
     .table__cell_approach_medium::before {
-      content: '• ';
+      content: "• ";
       font-size: 16px;
       font-weight: 600;
       color: #fc9a14; }
     .table__cell_approach_medium::after {
-      content: ' — Продвинутый'; }
+      content: " — Продвинутый"; }
     .table__cell_approach_high::before {
-      content: '• ';
+      content: "• ";
       font-size: 16px;
       font-weight: 600;
       color: #ec2f2a; }
     .table__cell_approach_high::after {
-      content: ' — Условие перехода'; }
+      content: " — Условие перехода"; }
 
 .sidebar {
   position: fixed;
@@ -603,7 +609,7 @@ img {
     justify-content: flex-end;
     margin-bottom: 5px; }
   .sidebar__title {
-    margin: 0 0 5px;
+    margin: 0 0 7px;
     font-size: 28px;
     line-height: 1; }
     @media (min-width: 768px) {
@@ -639,3 +645,13 @@ img {
     .close-button {
       width: 28px;
       height: 28px; } }
+
+.about {
+  margin-top: 25px;
+  padding: 0 15px 30px; }
+  @media (min-width: 800px) {
+    .about {
+      margin-top: 35px;
+      padding: 0; } }
+  .about__item {
+    margin: 0; }

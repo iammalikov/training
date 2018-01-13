@@ -1,4 +1,4 @@
-@import './core/_core';
+@import "./core/_core";
 
 .header {
   padding: 15px 15px 20px;
@@ -136,6 +136,7 @@
   &__cell {
     padding: 5px 15px;
     font-size: 15px;
+    line-height: 1.5;
 
     @include mq(600px) {
       width: 25%;
@@ -171,6 +172,12 @@
       @include mq(800px) {
         margin-right: 50px;
       }
+
+      span {
+        padding-bottom: 2px;
+        border-bottom: 1px dashed rgba($text-color, 0.5);
+        pointer-events: none;
+      }
     }
 
     &_sublevels {
@@ -201,10 +208,6 @@
 
     &_approach {
 
-      span {
-        vertical-align: middle;
-      }
-
       &_low,
       &_medium,
       &_high {
@@ -220,40 +223,40 @@
 
       &_low {
         &::before {
-          content: '• ';
+          content: "• ";
           font-size: 16px;
           font-weight: 600;
           color: $low;
         }
 
         &::after {
-          content: ' — Начальный';
+          content: " — Начальный";
         }
       }
 
       &_medium {
         &::before {
-          content: '• ';
+          content: "• ";
           font-size: 16px;
           font-weight: 600;
           color: $medium;
         }
 
         &::after {
-          content: ' — Продвинутый';
+          content: " — Продвинутый";
         }
       }
 
       &_high {
         &::before {
-          content: '• ';
+          content: "• ";
           font-size: 16px;
           font-weight: 600;
           color: $high;
         }
 
         &::after {
-          content: ' — Условие перехода';
+          content: " — Условие перехода";
         }
       }
     }
@@ -288,7 +291,7 @@
   }
 
   &__title {
-    margin: 0 0 5px;
+    margin: 0 0 7px;
     font-size: 28px;
     line-height: 1;
 
@@ -336,5 +339,19 @@
   @include mq(768px) {
     width: 28px;
     height: 28px;
+  }
+}
+
+.about {
+  margin-top: 25px;
+  padding: 0 15px 30px;
+
+  @include mq(800px) {
+    margin-top: 35px;
+    padding: 0;
+  }
+
+  &__item {
+    margin: 0;
   }
 }
