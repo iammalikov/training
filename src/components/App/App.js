@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Header from '../Header/Header';
 import LevelButton from '../LevelButton/LevelButton';
 import Table from '../Table/Table';
@@ -33,6 +33,8 @@ class App extends Component {
   handleChangeShowSidebar(e) {
     const showStatus = this.state.showSidebar;
 
+    document.body.classList.toggle('remove-scrolling');
+
     if (e.target.classList.contains('table__cell_exercise')) {
       return this.setState({
         showSidebar: !showStatus,
@@ -49,7 +51,7 @@ class App extends Component {
     const { level, showSidebar, exercise } = this.state;
 
     return (
-      <React.Fragment>
+      <Fragment>
         <Header />
         <section className='main'>
           <LevelButton current={level} onChangeLevel={this.handleChangeLevel} />
@@ -59,7 +61,7 @@ class App extends Component {
           </div>
         </section>
         <Sidebar show={showSidebar} level={level} exercise={exercise} onChangeShowSidebar={this.handleChangeShowSidebar} />
-      </React.Fragment>
+      </Fragment>
     );
   }
 }

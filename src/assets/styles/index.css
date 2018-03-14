@@ -406,6 +406,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.remove-scrolling {
+  overflow: hidden; }
+
 .link {
   color: #00aaff;
   border-bottom: 1px solid rgba(0, 170, 255, 0.3);
@@ -561,29 +564,22 @@ img {
       .table__cell_sublevels_high span {
         padding-bottom: 8px;
         border-bottom: 2px solid #ec2f2a; }
-    .table__cell_approach_low::before, .table__cell_approach_low::after, .table__cell_approach_medium::before, .table__cell_approach_medium::after, .table__cell_approach_high::before, .table__cell_approach_high::after {
-      vertical-align: middle; }
-      @media (min-width: 600px) {
-        .table__cell_approach_low::before, .table__cell_approach_low::after, .table__cell_approach_medium::before, .table__cell_approach_medium::after, .table__cell_approach_high::before, .table__cell_approach_high::after {
-          display: none; } }
-    .table__cell_approach_low::before {
+    @media (min-width: 600px) {
+      .table__cell_approach_low::before, .table__cell_approach_low::after, .table__cell_approach_medium::before, .table__cell_approach_medium::after, .table__cell_approach_high::before, .table__cell_approach_high::after {
+        display: none; } }
+    .table__cell_approach_low::before, .table__cell_approach_medium::before, .table__cell_approach_high::before {
       content: "• ";
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 15px;
+      font-weight: 600; }
+    .table__cell_approach_low::before {
       color: #54cd9a; }
     .table__cell_approach_low::after {
       content: " — Начальный"; }
     .table__cell_approach_medium::before {
-      content: "• ";
-      font-size: 16px;
-      font-weight: 600;
       color: #fc9a14; }
     .table__cell_approach_medium::after {
       content: " — Продвинутый"; }
     .table__cell_approach_high::before {
-      content: "• ";
-      font-size: 16px;
-      font-weight: 600;
       color: #ec2f2a; }
     .table__cell_approach_high::after {
       content: " — Условие перехода"; }
@@ -595,7 +591,8 @@ img {
   max-width: 600px;
   top: 0;
   left: 0;
-  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #fff;
   transform: translateX(-100%);
   transition: .3s ease; }

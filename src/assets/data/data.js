@@ -29,7 +29,7 @@ export default [
     pushupsHandstand: {
       title: "Отжимания в&nbsp;стойке на&nbsp;руках",
       sublevels: ["30 сек.", "1 мин.", "2 мин."],
-      name: "стои&#774;ка&nbsp;на&nbsp;голове у&nbsp;стены"
+      name: "стойка&nbsp;на&nbsp;голове у&nbsp;стены"
     }
   },
   {
@@ -42,7 +42,7 @@ export default [
     squats: {
       title: "Приседания",
       sublevels: ["1x10", "2x20", "3x40"],
-      name: "&laquo;складнои&#774; ножичек&raquo;"
+      name: "&laquo;складной ножичек&raquo;"
     },
     pullups: {
       title: "Подтягивания",
@@ -52,7 +52,7 @@ export default [
     legLifts: {
       title: "Подъем ног",
       sublevels: ["1x10", "2x20", "3x35"],
-      name: "подъе&#776;мы&nbsp;коленеи&#774; ле&#776;жа"
+      name: "подъе&#776;мы&nbsp;коленей ле&#776;жа"
     },
     bridges: {
       title: "Мосты",
@@ -75,17 +75,17 @@ export default [
     squats: {
       title: "Приседания",
       sublevels: ["1x10", "2x15", "3x30"],
-      name: "поддержанныи&#774; присед"
+      name: "поддержанный присед"
     },
     pullups: {
       title: "Подтягивания",
       sublevels: ["1x10", "2x15", "3x20"],
-      name: "подтягивание &laquo;перочиныи&#774; нож&raquo;"
+      name: "подтягивание &laquo;перочиный нож&raquo;"
     },
     legLifts: {
       title: "Подъем ног",
       sublevels: ["1x10", "2x15", "3x30"],
-      name: "подъе&#776;мы&nbsp;коленеи&#774; ле&#776;жа"
+      name: "подъе&#776;мы&nbsp;коленей ле&#776;жа"
     },
     bridges: {
       title: "Мосты",
@@ -95,7 +95,7 @@ export default [
     pushupsHandstand: {
       title: "Отжимания в&nbsp;стойке на&nbsp;руках",
       sublevels: ["30 сек.", "1 мин.", "2 мин."],
-      name: "стои&#774;ка&nbsp;на&nbsp;руках у&nbsp;стены"
+      name: "стойка&nbsp;на&nbsp;руках у&nbsp;стены"
     }
   },
   {
@@ -128,7 +128,7 @@ export default [
     pushupsHandstand: {
       title: "Отжимания в&nbsp;стойке на&nbsp;руках",
       sublevels: ["1x5", "2x10", "2x20"],
-      name: "частичные отжимания вnbsp; стои&#774;ке&nbsp;н&nbsp;руках"
+      name: "частичные отжимания вnbsp; стойке&nbsp;н&nbsp;руках"
     }
   },
   {
@@ -141,7 +141,7 @@ export default [
     squats: {
       title: "Приседания",
       sublevels: ["1x5", "2x10", "2x30"],
-      name: "полныи&#774; присед"
+      name: "полный присед"
     },
     pullups: {
       title: "Подтягивания",
@@ -161,7 +161,7 @@ export default [
     pushupsHandstand: {
       title: "Отжимания в&nbsp;стойке на&nbsp;руках",
       sublevels: ["1x5", "2x10", "2x15"],
-      name: "отжимания в&nbsp;стои&#774;ке&nbsp;на&nbsp;руках"
+      name: "отжимания в&nbsp;стойке&nbsp;на&nbsp;руках"
     }
   },
   {
@@ -184,7 +184,7 @@ export default [
     legLifts: {
       title: "Подъем ног",
       sublevels: ["1x5", "2x10", "2x15"],
-      name: "подъем коленеи&#774; из&nbsp;виса на&nbsp;перекладине"
+      name: "подъем коленей из&nbsp;виса на&nbsp;перекладине"
     },
     bridges: {
       title: "Мосты",
@@ -194,7 +194,7 @@ export default [
     pushupsHandstand: {
       title: "Отжимания в&nbsp;стойке на&nbsp;руках",
       sublevels: ["1x5", "2x9", "2x12"],
-      name: "закрытые отжимания вnbsp; стои&#774;ке&nbsp;н&nbsp;руках"
+      name: "закрытые отжимания в&nbsp;стоийке&nbsp;на&nbsp;руках"
     }
   },
   {
@@ -220,7 +220,7 @@ export default [
     legLifts: {
       title: "Подъем ног",
       sublevels: ["1x5", "2x10", "2x15"],
-      name: "подъем согнутои&#774; ноги"
+      name: "подъем согнутой ноги"
     },
     bridges: {
       title: "Мосты",
@@ -230,7 +230,7 @@ export default [
     pushupsHandstand: {
       title: "Отжимания в&nbsp;стойке на&nbsp;руках",
       sublevels: ["1x5", "2x8", "2x10"],
-      name: "неравномерные отжимания в&nbsp;стои&#774;ке&nbsp;на&nbsp;руках",
+      name: "неравномерные отжимания в&nbsp;стойке&nbsp;на&nbsp;руках",
       bothSides: true
     }
   },
@@ -239,25 +239,25 @@ export default [
     pushups: {
       title: "Отжимания",
       sublevels: ["1x5", "2x10", "2x20"],
-      name: "половинные отжимания на&nbsp;однои&#774; руке",
+      name: "половинные отжимания на&nbsp;одной руке",
       bothSides: true
     },
     squats: {
       title: "Приседания",
       sublevels: ["1x5", "2x10", "2x20"],
-      name: "половинные приседания на&nbsp;однои&#774; ноге",
+      name: "половинные приседания на&nbsp;одной ноге",
       bothSides: true
     },
     pullups: {
       title: "Подтягивания",
       sublevels: ["1x4", "2x6", "2x8"],
-      name: "половинные подтягивания на&nbsp;однои&#774; руке",
+      name: "половинные подтягивания на&nbsp;одной руке",
       bothSides: true
     },
     legLifts: {
       title: "Подъем ног",
       sublevels: ["1x5", "2x10", "2x15"],
-      name: "висячие подъемы лягушкои&#774;"
+      name: "висячие подъемы лягушкой"
     },
     bridges: {
       title: "Мосты",
@@ -267,7 +267,7 @@ export default [
     pushupsHandstand: {
       title: "Отжимания в&nbsp;стойке на&nbsp;руках",
       sublevels: ["1x4", "2x6", "2x8"],
-      name: "Неполные отжимания на&nbsp;однои&#774; руке",
+      name: "Неполные отжимания на&nbsp;одной руке",
       bothSides: true
     }
   },
@@ -282,19 +282,19 @@ export default [
     squats: {
       title: "Приседания",
       sublevels: ["1x5", "2x10", "2x20"],
-      name: "приседания на&nbsp;однои&#774; ноге с&nbsp;поддержкои&#774;",
+      name: "приседания на&nbsp;одной ноге с&nbsp;поддержкой",
       bothSides: true
     },
     pullups: {
       title: "Подтягивания",
       sublevels: ["1x3", "2x5", "2x7"],
-      name: "ассистированные подтягивания на&nbsp;однои&#774; руке",
+      name: "ассистированные подтягивания на&nbsp;одной руке",
       bothSides: true
     },
     legLifts: {
       title: "Подъем ног",
       sublevels: ["1x5", "2x10", "2x15"],
-      name: "подъемы частично прямои&#774; ноги"
+      name: "подъемы частично прямой ноги"
     },
     bridges: {
       title: "Мосты",
@@ -304,7 +304,7 @@ export default [
     pushupsHandstand: {
       title: "Отжимания в&nbsp;стойке на&nbsp;руках",
       sublevels: ["1x3", "2x4", "2x6"],
-      name: "рычажные отжимания в&nbsp;стои&#774;ке&nbsp;на&nbsp;руках",
+      name: "рычажные отжимания в&nbsp;стойке&nbsp;на&nbsp;руках",
       bothSides: true
     }
   },
@@ -313,19 +313,19 @@ export default [
     pushups: {
       title: "Отжимания",
       sublevels: ["1x5", "2x10", "1x100"],
-      name: "отжимания на&nbsp;однои&#774; руке",
+      name: "отжимания на&nbsp;одной руке",
       bothSides: true
     },
     squats: {
       title: "Приседания",
       sublevels: ["1x5", "2x10", "2x50"],
-      name: "приседание на&nbsp;однои&#774; ноге",
+      name: "приседание на&nbsp;одной ноге",
       bothSides: true
     },
     pullups: {
       title: "Подтягивания",
       sublevels: ["1x1", "2x3", "2x6"],
-      name: "подтягивание на&nbsp;однои&#774; руке",
+      name: "подтягивание на&nbsp;одной руке",
       bothSides: true
     },
     legLifts: {
@@ -341,7 +341,7 @@ export default [
     pushupsHandstand: {
       title: "Отжимания в&nbsp;стойке на&nbsp;руках",
       sublevels: ["1x1", "2x2", "2x5"],
-      name: "отжимание в&nbsp;стои&#774;ке&nbsp;на&nbsp;однои&#774; руке",
+      name: "отжимание в&nbsp;стойке&nbsp;на&nbsp;одной руке",
       bothSides: true
     }
   }

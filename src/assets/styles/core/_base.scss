@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.remove-scrolling {
+  overflow: hidden;
+}
+
 .link {
   color: $link;
   border-bottom: 1px solid rgba($link, 0.3);
