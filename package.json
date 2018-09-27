@@ -2,7 +2,7 @@
   "name": "training",
   "version": "0.1.0",
   "author": "Ilya Malikov",
-  "homepage": "https://ilyakormostovoy.github.io/training",
+  "homepage": "https://iammalikov.github.io/training/",
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.5",
